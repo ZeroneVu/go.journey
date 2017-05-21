@@ -12,6 +12,7 @@ I wanna create a very basic skeleton for simple RESTful service which matching m
 Architecture
 ------------
 ![enter image description here](http://res.cloudinary.com/zeronevu/image/upload/v1495387671/simplerest.svg)
+
 Vision
 ------
 Simple is best and strait forward RESTful service seem cool and easy to understand but how about ...

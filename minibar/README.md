@@ -15,6 +15,7 @@ I wanna create a very basic skeleton for simple RESTful service which matching m
 Architecture
 ------------
 ![enter image description here](http://res.cloudinary.com/zeronevu/image/upload/v1495387671/minibar.svg)
+
 Vision
 ------
 Well ... it's human nature to want more vs my architecture design concept (taking out as much as possible until nothing left)
