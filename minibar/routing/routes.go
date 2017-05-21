@@ -3,7 +3,7 @@ package routing
 import (
 	"net/http"
 
-	. "github.com/ZeroneVu/go.journey/simplerest/handling"
+	. "github.com/ZeroneVu/go.journey/minibar/handling"
 )
 
 type Route struct {

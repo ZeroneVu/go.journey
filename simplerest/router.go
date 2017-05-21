@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
+	. "github.com/ZeroneVu/go.journey/simplerest/routing"
 	"github.com/gorilla/mux"
-	. "alfacore.dev/digital-bank/rule-engine/routing"
 )
 
 func NewRouter() *mux.Router {

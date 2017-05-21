@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strconv"
 
-	. "github.com/ZeroneVu/go.journey/simplerest/business"
-	. "github.com/ZeroneVu/go.journey/simplerest/models"
+	. "github.com/ZeroneVu/go.journey/minibar/business"
+	. "github.com/ZeroneVu/go.journey/minibar/models"
 	"github.com/gorilla/mux"
 )
 

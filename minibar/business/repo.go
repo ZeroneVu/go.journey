@@ -3,7 +3,7 @@ package business
 import (
 	"fmt"
 
-	. "github.com/ZeroneVu/go.journey/simplerest/models"
+	. "github.com/ZeroneVu/go.journey/minibar/models"
 )
 
 var currentId int
