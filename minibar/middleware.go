@@ -26,7 +26,7 @@ func Adapt(h http.Handler, adapters ...Adapter) http.Handler {
 type key int
 
 const (
-	confKey       key = iota
+	confKey key = iota
 )
 
 // Log ...
@@ -39,7 +39,7 @@ func Logger(route routing.Route) Adapter {
 			// server http
 			h.ServeHTTP(w, r)
 
-		  // by doing this the log happen after all http request
+			// by doing this the log happen after all http request
 			log.Printf(
 				"%s\t%s\t%s\t%s",
 				route.Method,
@@ -63,7 +63,7 @@ func WithConf(c config.Config) Adapter {
 			ctx = context.WithValue(r.Context(), confKey, c)
 			r = r.WithContext(ctx)
 
-      // server http
+			// server http
 			h.ServeHTTP(w, r)
 		})
 	}

@@ -4,7 +4,22 @@ Once upon a time there was a hero less perfect than me call Gary Stu. Like all o
 
 Like all the journey ... it's started with a hello :).
 
- - Hello to how variable scope between packages and accessing between public and private asserts
+ - Hello to how variable scope between packages and accessing between public and private asserts. Our poor Stu wasted whole day to find out that public assert can be accessed with capital letter on the first character for example:
+
+    ```go
+	type PublicMe struct {
+		Value string
+	}
+    ```
+Could be a public (among packets) assert struct vs with how private (among packets) struct
+
+    ```go
+	type privateme struct {
+		value string
+	}
+    ```
+
+ - Hello to how golang express lambda in a very neat way by following this [thread](https://stackoverflow.com/questions/31362044/anonymous-interface-implementation-in-golang) on stackoverflow by this [answer](https://stackoverflow.com/a/42182987/2540986). By learning that Stu was lead to dealing with unknown type, number of function parameters in golang, digging deep down by this [thread](https://stackoverflow.com/questions/34048861/can-golang-take-a-function-with-unknown-number-of-parameters-as-an-argument-to-a), on an very interesting [answer](https://stackoverflow.com/a/34062738/2540986). It's seem that best practice that we **SHOULD NOT** try to fight type system over a static type programming language like go. Best practice that even in lambda expression we should guarantee the static form of input (in parameters) and output (return statement). Of course we could overcome all obstacles by [reflect](https://blog.golang.org/laws-of-reflection), slicing and such but fabulous always come with a price so it's **not recommended**.
 
 Architecture
 ------------
